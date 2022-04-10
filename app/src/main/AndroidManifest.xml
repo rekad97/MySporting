@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySporting">
         <activity
+            android:name=".SportPlaceDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddNewSportResultActivity"
             android:exported="false" />
         <activity
