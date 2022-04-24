@@ -23,8 +23,6 @@ class MyResultsActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-
-
         binding.fab.setOnClickListener {
             val intent = Intent(this, AddNewSportResultActivity::class.java);
             startActivity(intent);
