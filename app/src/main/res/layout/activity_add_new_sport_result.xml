@@ -7,40 +7,39 @@
     tools:context=".AddNewSportResultActivity">
 
     <EditText
-        android:id="@+id/editTextActivityName"
+        android:id="@+id/addTextActivityName"
         android:layout_width="253dp"
         android:layout_height="48dp"
         android:layout_marginTop="168dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Activity name"
+        android:hint="Activity name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNotes"
+        android:id="@+id/addTextNotes"
         android:layout_width="253dp"
         android:layout_height="48dp"
         android:layout_marginBottom="128dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Notes"
+        android:hint="Notes"
         app:layout_constraintBottom_toTopOf="@+id/addResultBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/addTextDate"
         android:layout_width="253dp"
         android:layout_height="48dp"
         android:ems="10"
         android:hint="Date"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNotes"
+        app:layout_constraintBottom_toTopOf="@+id/addTextNotes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextActivityName"
+        app:layout_constraintTop_toBottomOf="@+id/addTextActivityName"
         app:layout_constraintVertical_bias="0.417" />
 
     <Button

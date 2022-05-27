@@ -12,11 +12,11 @@ import retrofit2.http.Query
 
 interface ApiInterface {
 
-    @GET("places")
-    fun getSportPlaces(@Query("origin") location: String, @Query("radius") radius: Number) : Call<List<SportPlace>>
+    @GET("sportplaces")
+    fun getSportPlaces() : Call<List<SportPlace>>
     companion object {
 
-        var BASE_URL = "https://sportplaces.api.decathlon.com/api/v1/"
+        var BASE_URL = "https://sportplacesapi.herokuapp.com/"
 
         fun create() : ApiInterface {
 

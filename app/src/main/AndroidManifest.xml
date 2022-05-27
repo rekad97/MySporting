@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mysporting">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,12 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySporting">
         <activity
+            android:name=".EditSportResultActivity"
+            android:label="Edit result"
+            android:exported="false" />
+        <activity
             android:name=".SportPlaceDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".AddNewSportResultActivity"
-            android:label="Add new result"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Add new result" />
         <activity
             android:name=".MyResultsActivity"
             android:exported="false"
@@ -23,8 +29,8 @@
             android:theme="@style/Theme.MySporting.NoActionBar" />
         <activity
             android:name=".SportPlacesActivity"
-            android:label="Sport places"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Sport places" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -23,7 +23,7 @@ abstract class AppDatabase : RoomDatabase() {
                 val db = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java, "results"
-                ).build()
+                ).fallbackToDestructiveMigration().allowMainThreadQueries().build()
                 INSTANCE = db
                 return db
             }

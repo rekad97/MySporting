@@ -1,12 +1,13 @@
 package com.example.mysporting.room
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.example.mysporting.models.MyResult
 
 @Dao
     interface MyResultDao {
-        @Query("SELECT * FROM results")
-        fun getAll(): List<MyResult>
+        @Query("SELECT * FROM myresults")
+        fun getAll(): LiveData<List<MyResult>>
 
         @Update()
         fun update(result: MyResult)

@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/sportPlaceNameTextView"
+        android:id="@+id/editTextActivityName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
@@ -15,7 +15,7 @@
         android:layout_marginBottom="4dp"
         android:inputType="text" />
     <EditText
-        android:id="@+id/addressTextView"
+        android:id="@+id/editTextDate"
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,9 +24,9 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
-        />
+       />
     <EditText
-        android:id="@+id/cityTextView"
+        android:id="@+id/editTextNotes"
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +38,14 @@
         />
 
     <Button
-        android:id="@+id/cancelBtnDetails"
+        android:id="@+id/editResultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/cancelBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel" />

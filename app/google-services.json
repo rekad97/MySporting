@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1032026028874",
+    "project_id": "my-sporting-app",
+    "storage_bucket": "my-sporting-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032026028874:android:b0ace045fd935096de9fb3",
+        "android_client_info": {
+          "package_name": "com.example.mysporting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032026028874-7p1fqe2puf5far9agfupmn154fv5b19l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJLtL30gnV_slDgzVX67COwEVQjULZU8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032026028874-7p1fqe2puf5far9agfupmn154fv5b19l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,10 +9,10 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+        android:id="@+id/recyclerViewSportPlaces"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="5"
-        tools:listitem="@layout/item_row" />
+        tools:listitem="@layout/item_row_sport_place" />
 
 </LinearLayout>

@@ -2,7 +2,11 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
+
+apply from: "$project.rootDir/jacoco.gradle"
 android {
     compileSdk 32
 
@@ -32,6 +36,8 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+
 }
 
 dependencies {
@@ -47,6 +53,22 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation("androidx.room:room-runtime:2.4.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.0.0")
+    implementation platform('com.google.firebase:firebase-bom:30.0.2')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.android.gms:play-services-analytics-impl:17.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+        // Required -- JUnit 4 framework
+        testImplementation "junit:junit:4.10"
+        // Optional -- Robolectric environment
+        //testImplementation "androidx.test:core:$androidXTestVersion"
+        // Optional -- Mockito framework
+        testImplementation "org.mockito:mockito-core:3.+"
+        // Optional -- mockito-kotlin
+        testImplementation "org.mockito.kotlin:mockito-kotlin:3.2.0"
+        // Optional -- Mockk framework
+        //testImplementation "io.mockk:mockk:$mockkVersion"
+
     annotationProcessor("androidx.room:room-compiler:2.4.2")
 
     // To use Kotlin annotation processing tool (kapt)
@@ -73,6 +95,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
 
 
 }
